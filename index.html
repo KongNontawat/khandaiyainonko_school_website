@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="asset/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asset/sweetalert2/dist/sweetalert2.min.css">
+  <link rel="stylesheet" href="asset/fontawesome/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/custom.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/index.css">
+  <title>Khandaiyainonko_School</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white py-2">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="image/school_logo.png" alt="school_logo.png">
+        <span class="ms-2">
+          <h5 class="mb-0">โรงเรียนบ้านขั้นไดใหญ่โนนค้อ</h5>
+          <small class="d-none d-md-block">Khandaiyainonko School</small>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active mx-1" aria-current="page" href="index.html">หน้าแรก</a>
+          </li>
+
+          <li class="nav-item dropdown mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              ข้อมูลโรงเรียน
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="info.html">ข้อมูลทั่วไป</a></li>
+              <li><a class="dropdown-item" href="history.html">ประวัติโรงเรียน</a></li>
+              <li><a class="dropdown-item" href="building.html">อาคารสถานที่</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item mx-1">
+            <a href="news.html" class="nav-link">ข่าวสาร</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="person.html" class="nav-link">บุคลากร</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="image_activity.html" class="nav-link">รูปกิจกรรม</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a href="https://nurseryyasothon.123guestbook.com/" target="_blank" class="nav-link">สมุดเยี่ยม</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/banner1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/banner2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/banner3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- History -->
+  <section class="history py-5 bg-white">
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-md-6">
+          <h3 class="text-center text-heading mb-3">โรงเรียนบ้านขั้นไดใหญ่โนนค้อ</h3>
+          <p class="inden">โรงเรียนบ้านขั้นไดใหญ่โนนค้อ เป็นโรงเรียนในสังกัดสำนักงานเขตพื้นที่การศึกษาประถมศึกษายโสธร เขต 1
+            สำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน กระทรวงศึกษาธิการ ตั้งอยู่หมู่ที่ 5 บ้านขั้นไดใหญ่ ตำบลขั้นไดใหญ่
+            อำเภอเมือง จังหวัดยโสธร ก่อตั้งเมื่อ พ.ศ. 2466 มีพื้นที่ทั้งหมด 6 ไร่ 12 ตารางวา เป็นที่ดินของประชาชนบริจาค
+            ผู้บริหารคนแรก คือ นายจูม สุวรรณราช คนปัจจุบันชื่อ นายสุทธิรักษ์ จันทุม ปัจจุบันมีครูทั้งหมด 4 คน ผู้บริหาร
+            1 คน มีลูกจ้างชั่วคราว 2 คน ปฏิบัติหน้าที่เจ้าหน้าธุรการและนักการภารโรง มีนักเรียนทั้งหมด 49 คน ชาย 26 คน หญิง 23 คน</p>
+          <p class="inden">โรงเรียนบ้านขั้นไดใหญ่โนนค้อ เป็นโรงเรียนจัดการศึกษาร่วมกับชุมชน เพื่อพัฒนานักเรียนให้มีความรู้คู่คุณธรรม
+            มีระเบียบวินัย มีความเป็นประชาธิปไตย</p>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <img src="image/131382010_422826615759557_5612887752299108131_n.jpg" alt="" class="img-responsive w-100">
+            </div>
+            <div class="col-sm-6 mt-5">
+              <img src="image/131398236_422827462426139_1168220682207837273_n.jpg" alt="" class="img-responsive w-100">
+            </div>
+            <div class="col-sm-6">
+              <img src="image/131540752_422827102426175_1480390729337007485_n.jpg" alt="" class="img-responsive w-100">
+            </div>
+            <div class="col-sm-6 mt-5">
+              <img src="image/131384149_422827549092797_7213378609198440930_n.jpg" alt="" class="img-responsive w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="carouselExampleCaptions" data-aos="fade-up" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/mini_banner4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <!-- info -->
+  <section class="info py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center text-heading">ข้อมูลทั่วไป</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-3 mt-4">
+        <div class="col">
+          <div class="card border-0 text-center bg-light">
+            <img src="image/118180033_332649564777263_9029202085675885683_n.jpg" class="rounded-circle" height="200"
+              width="200" alt="..." style="display: block; margin: 0 auto;object-fit:cover;">
+            <div class="card-body">
+              <h4 class="card-title">วิสัยทัศน์</h4>
+              <p class="card-text">ฒนานักเรียนให้มีความรู้คู่คุณธรรม มีระเบียบวินัย มีความเป็นประชาธิปไตย
+                ตระหนักในหลักปรัชญาเศรษฐกิจพอเพียง มีสุขภาพอนามัยสมบูรณ์ อนุรักษ์พัฒนาสิ่งแวดล้อม
+                และวัฒนธรรมประเพณีไทยนาฎศิลป์ดนตรีพื้นเมือง</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 text-center bg-light">
+            <img src="image/134105034_428553611853524_1646920930697782480_n.jpg" class="rounded-circle" height="200"
+              width="200" alt="..." style="display: block; margin: 0 auto;object-fit:cover;">
+            <div class="card-body">
+              <h4 class="card-title">พันธกิจ</h4>
+              <p class="card-text">พัฒนาผู้เรียนให้มีความรู้คู่คุณธรรม และมีคุณลักษณะที่พึงประสงค์ของหลักสูตร
+                พัฒนาผู้เรียนให้มีระเบียบวินัย และมีความเป็นประชาธิปไตย</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 text-center bg-light">
+            <img src="image/250915973_621566599218890_5049654607792479363_n.jpg" class="rounded-circle" height="200"
+              width="200" alt="..." style="display: block; margin: 0 auto;object-fit:cover;">
+            <div class="card-body">
+              <h4 class="card-title">ปรัชญาโรงเรียน</h4>
+              <p class="card-text">นักเรียนในวัยเรียนได้รับการศึกษาอย่างทั่วถึงและมีคุณภาพตามมาตรฐานการศึกษาของโรงเรียน
+                ครูมีความรู้ความสามารถ มีคุณธรรมจริยธรรม และจัดการเรียนการสอนได้อย่างมีประสิทธิภาพ</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- news -->
+  <section class="news py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center text-heading">ข้อมูลข่าวสาร</h2>
+      <div class="row py-4 mt-3 g-0">
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="image/241260104_591509325557951_8882996953874678636_n.jpg" class="img-fluid rounded-start"
+                  alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">ประชุมคณะครูโรงเรียนบ้านทันไดใหญ่</h5>
+                  <p class="card-text">ประชุมคณะครูโรงเรียนบ้านทันไดใหญ่ โนนต้อ - รับการตรวจสอบจาก๒น่วยตรวจสอบ ภายใน
+                    นําโดย นายสฤษดิ ทองบ่อ ผู้อํานวยการ๒น่วยตรวจสอบภายใน สป.ยส.1 ณา </p>
+                  <p class="card-text"><small class="text-muted"><a class="text-muted"
+                        href="https://www.facebook.com/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B9%82%E0%B8%99%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%AD-106575927384629">ดูข้อมูลเพิ่มเติม</a></small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <img src="image/240511150_591509498891267_6609023692970352418_n.jpg" class="img-fluid rounded-start"
+                  alt="...">
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title">กิจกรรมการแข่งขันโครงการ</h5>
+                  <p class="card-text">กิจกรรมการแข่งขันโครงการ "รักษ์ ภาษาไทย" เนืองในวันภาษาไทยแห่งชาติ ปี 2564
+                    เครือข่ายคุณภาพการศึกษายศบดินทร์ โรงเรียนบ้านขั้นไดใหญ่โนนค้อ ....</p>
+                  <p class="card-text"><small class="text-muted"><a class="text-muted"
+                        href="https://www.facebook.com/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B9%82%E0%B8%99%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%AD-106575927384629">ดูข้อมูลเพิ่มเติม</a></small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/mini_banner5.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+          <h1 class="mt-4" data-aos="fade-up">มีความรู้คู่คุณธรรม มีระเบียบวินัย มีความเป็นประชาธิปไตย</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- image activity -->
+  <section class="news py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center text-heading">รูปกิจกรรม</h2>
+      <div class="row py-4 mt-3">
+        <div class="col-md-3">
+          <img src="image/120367465_359981948710691_8593281889625269298_n.jpg" alt="" height="200">
+          <p class="text-center mt-3">“งานเกษียณอายุราชการครู</p>
+        </div>
+        <div class="col-md-3">
+          <img src="image/269740575_657614085614141_6255887835080749607_n.jpg" alt="" height="200">
+          <p class="text-center mt-3">กิจกรรมการแข่งขันกีฬาสีภายใน</p>
+        </div>
+        <div class="col-md-3">
+          <img src="image/250915973_621566599218890_5049654607792479363_n.jpg" alt="" height="200">
+          <p class="text-center mt-3">บรรยากาศวันแรกของการเปิดภาคเรียน เป็นไปด้วยความเรียบร้อย</p>
+        </div>
+        <div class="col-md-3">
+          <img src="image/120469697_359973048711581_8300986355330691601_n.jpg" alt="" height="200">
+          <p class="text-center mt-3">วันที่พากเพียร สู่วันเกษียณที่ภาคภูมิ มุทิตาจิต</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- covid poster -->
+  <section class="poster py-5 bg-white">
+    <div class="container">
+      <!-- <h2 class="text-center">รูปกิจกรรม</h2> -->
+      <ul class="nav nav-tabs mb-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">ข่าวสารทั่วไป</a>
+        </li>
+      </ul>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/poster1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/poster2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/poster3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!-- footer -->
+  <footer class="bg-light text-center text-lg-start" style="overflow: hidden;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <a class="d-flex align-items-center text-dark text-decoration-none mb-3" href="index.html">
+            <img src="image/school_logo.png" height="60" alt="school_logo.png">
+            <span class="ms-2">
+              <h6 class="mb-0">โรงเรียนบ้านขั้นไดใหญ่โนนค้อ</h6>
+              <small>Khandaiyainonko School</small>
+            </span>
+          </a>
+          <h5 class="">ข้อมูลติดต่อ</h5>
+          <p><i class="fas fa-school"></i> ที่อยู่ : หมู่ที่ 5 บ้านบ้านขั้นไดใหญ่ ตำบล ขั้นไดใหญ่ อำเภอ เมืองยโสธร
+            จังหวัด ยโสธร รหัสไปรษณีย์ 35000</p>
+          <p><i class="fas fa-phone"></i> เบอร์โทร : 0-4573-7421</p>
+          <p><i class="fas fa-envelope"></i> อีเมล์ : -</p>
+          <p><i class="fab fa-facebook"></i> เฟสบุ๊ค : <a
+              href="https://www.facebook.com/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88%E0%B9%82%E0%B8%99%E0%B8%99%E0%B8%84%E0%B9%89%E0%B8%AD-106575927384629"
+              target="_blank">โรงเรียนบ้านขั้นไดใหญ่โนนค้อ</a></p>
+          <p><i class="fas fa-globe"></i> เว็บไซต์ : <a
+              href="https://data.bopp-obec.info/web/index_view.php?School_ID=1035430056&page=info"
+              target="_blank">www.data.bopp-obec.info.com</a></p>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Google Map</h5>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.3148530234803!2d104.11674881527345!3d15.892567648368521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3117d016c1e253d3%3A0xe15d52c31738ccf3!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4Lia4LmJ4Liy4LiZ4LiC4Lix4LmJ4LiZ4LmE4LiU4LmD4Lir4LiN4LmI!5e0!3m2!1sth!2sth!4v1643988032947!5m2!1sth!2sth"
+            width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="copyright py-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6">
+            <div class="">
+              ดูข้อมูลผู้จัดทำ
+              <a class="text-dark" href="student_info.html" target="_blank">คลิก!!</a>
+            </div>
+          </div>
+          <div class="col-md-6 text-end">
+            จำนวนผู้เข้าชม :
+            <img
+              src="https://hitwebcounter.com/counter/counter.php?page=7938457&style=0025&nbdigits=6&type=page&initCount=0"
+              title="Free Counter" Alt="web counter" border="0" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <script src="asset/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="asset/sweetalert2/dist/sweetalert2.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="asset/fontawesome/js/all.min.js"></script>
+  <script src="asset/js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

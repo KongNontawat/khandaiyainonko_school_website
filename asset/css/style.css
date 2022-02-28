@@ -1,0 +1,162 @@
+@font-face {
+  font-family: kanit;
+  src: url(../fonts/Kanit-Bold.ttf),
+  url(../fonts/Kanit-BoldItalic.ttf),
+  url(../fonts/Kanit-ExtraBold.ttf),
+  url(../fonts/Kanit-ExtraLight.ttf),
+  url(../fonts/Kanit-ExtraLightItalic.ttf),
+  url(../fonts/Kanit-Italic.ttf),
+  url(../fonts/Kanit-Light.ttf),
+  url(../fonts/Kanit-LightItalic.ttf),
+  url(../fonts/Kanit-Medium.ttf),
+  url(../fonts/Kanit-MediumItalic.ttf),
+  url(../fonts/Kanit-Regular.ttf),
+  url(../fonts/Kanit-SemiBold.ttf),
+  url(../fonts/Kanit-Thin.ttf),
+}
+@font-face {
+  font-family: sarabun;
+  src: url(../fonts/Sarabun-ThinItalic.ttf),
+  url(../fonts/Sarabun-Thin.ttf),
+  url(../fonts/Sarabun-SemiBoldItalic.ttf),
+  url(../fonts/Sarabun-SemiBold.ttf),
+  url(../fonts/Sarabun-Regular.ttf),
+  url(../fonts/Sarabun-MediumItalic.ttf),
+  url(../fonts/Sarabun-Medium.ttf),
+  url(../fonts/Sarabun-LightItalic.ttf),
+  url(../fonts/Sarabun-Light.ttf),
+  url(../fonts/Sarabun-Bold.ttf),
+  url(../fonts/Sarabun-BoldItalic.ttf),
+  url(../fonts/Sarabun-ExtraLight.ttf)
+}
+
+:root {
+  --primary: #66A618;
+  --secondary: #EF5016;
+  --info: #30B2FD;
+  --warning: #ffc107;
+  --light: #f8f9fa;
+  --success: #198754;
+  --danger: #dc3545;
+  --white: #fff;
+  --dark: #212529;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: 'kanit','sarabun',Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.65;
+  position: relative;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1170px!important;
+}
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+  transition: all 0.3s;
+}
+.navbar .navbar-nav .nav-link::before {
+  transition: all 0.3s;
+  width: 0;
+}
+.navbar .navbar-nav .nav-link:hover::before {
+  content: "";
+  width: 90%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 7px;
+  background-color: var(--primary);
+  transition: all 0.3s;
+
+}
+
+.navbar .navbar-brand img {
+  height: 90px;
+}
+
+@media (max-width:992px) {
+  .navbar .navbar-brand img {
+    height: 70px;
+  }
+}
+
+@media (max-width:600px) {
+  .navbar .navbar-brand img {
+    height: 60px;
+  }
+  .navbar .navbar-brand h5 {
+    font-size: 16px;
+  }
+}
+@media (max-width:400px) {
+  .navbar .navbar-brand img {
+    height: 50px;
+  }
+  .navbar .navbar-brand h5 {
+    display: none;
+  }
+}
+
+.carousel .carousel-inner img {
+  object-fit: cover;
+  min-height: 200px;
+}
+
+
+
+.text-heading {
+  position: relative;
+}
+.text-heading::before {
+  content: "";
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary);
+}
+
+.list-group a {
+  text-decoration: none;
+  color: #212529;
+}
+
+
+section img,
+.card img {
+  transition: all 0.3s;
+}
+section img:hover {
+  transform: scale(1.03) translateY(-5%);
+  /* transform: translateY(-8%); */
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card:hover img {
+  transform: scale(1.03) translateY(-5%)!important;
+}
+
+.inden {
+  text-indent: 40px!important;
+}
+
+
+
